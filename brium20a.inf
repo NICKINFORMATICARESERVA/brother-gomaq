@@ -1,0 +1,212 @@
+;=======================================================================
+;  Brother Setup File
+;  Copyright (c)  2021 Brother Industries,LTD.
+;  FileName   :   brium20a.inf
+;  Function   :   Port Driver
+;  I/F        :   USB
+;  OS         ;   WindowsXP/x64/Vista/7/8/10
+;  Model      :   m20a
+;=======================================================================
+
+[Version]
+Signature = "$Windows NT$"
+Class      = Ports
+ClassGUID  = {4d36e978-e325-11ce-bfc1-08002be10318}
+Provider = %ProviderName%
+DriverPackageType=PlugAndPlay
+DriverPackageDisplayName=%DriverPackageDisplayName%
+DriverVer= 10/01/2021, 1.2.0.0
+CatalogFile=brium20a.cat
+
+; ========== Manufacturer/Models sections ===========
+
+[Manufacturer]
+%ProviderName% = BrDrv_WinUSB,NTx86,NTamd64.6.0,NTx86.6.1,NTamd64.6.1
+
+; XP/Vista 32bit
+[BrDrv_WinUSB.NTx86]
+"Brother HL-L5210DW" =USB_Install, USB\VID_04F9&PID_04E8&MI_01
+"Brother HL-L6210DW" =USB_Install, USB\VID_04F9&PID_04E9&MI_01
+"Brother HL-L6415DW" =USB_Install, USB\VID_04F9&PID_04EA&MI_01
+"Brother HL-L6410DN" =USB_Install, USB\VID_04F9&PID_04EB&MI_01
+"Brother HL-L5210DN" =USB_Install, USB\VID_04F9&PID_0503&MI_01
+"Brother HL-L6310DW" =USB_Install, USB\VID_04F9&PID_0504&MI_01
+"Brother HL-EX415DW" =USB_Install, USB\VID_04F9&PID_0505&MI_01
+"Brother HL-L5218DN" =USB_Install, USB\VID_04F9&PID_0506&MI_01
+"Brother HL-L5228DW" =USB_Install, USB\VID_04F9&PID_0507&MI_01
+"Brother HL-L6418DW" =USB_Install, USB\VID_04F9&PID_0508&MI_01
+"Brother HL-L6412DW" =USB_Install, USB\VID_04F9&PID_051C&MI_01
+"Brother HL-L5212DW" =USB_Install, USB\VID_04F9&PID_051D&MI_01
+"Brother HL-L5212DN" =USB_Install, USB\VID_04F9&PID_051E&MI_01
+"Brother HL-L5215DW" =USB_Install, USB\VID_04F9&PID_052A&MI_01
+"Brother HL-L6217DW" =USB_Install, USB\VID_04F9&PID_0529&MI_01
+
+; Vista 64bit
+[BrDrv_WinUSB.NTamd64.6.0]
+"Brother HL-L5210DW" =USB_Install, USB\VID_04F9&PID_04E8&MI_01
+"Brother HL-L6210DW" =USB_Install, USB\VID_04F9&PID_04E9&MI_01
+"Brother HL-L6415DW" =USB_Install, USB\VID_04F9&PID_04EA&MI_01
+"Brother HL-L6410DN" =USB_Install, USB\VID_04F9&PID_04EB&MI_01
+"Brother HL-L5210DN" =USB_Install, USB\VID_04F9&PID_0503&MI_01
+"Brother HL-L6310DW" =USB_Install, USB\VID_04F9&PID_0504&MI_01
+"Brother HL-EX415DW" =USB_Install, USB\VID_04F9&PID_0505&MI_01
+"Brother HL-L5218DN" =USB_Install, USB\VID_04F9&PID_0506&MI_01
+"Brother HL-L5228DW" =USB_Install, USB\VID_04F9&PID_0507&MI_01
+"Brother HL-L6418DW" =USB_Install, USB\VID_04F9&PID_0508&MI_01
+"Brother HL-L6412DW" =USB_Install, USB\VID_04F9&PID_051C&MI_01
+"Brother HL-L5212DW" =USB_Install, USB\VID_04F9&PID_051D&MI_01
+"Brother HL-L5212DN" =USB_Install, USB\VID_04F9&PID_051E&MI_01
+"Brother HL-L5215DW" =USB_Install, USB\VID_04F9&PID_052A&MI_01
+"Brother HL-L6217DW" =USB_Install, USB\VID_04F9&PID_0529&MI_01
+
+; Windows 7/8 or later 32bit
+[BrDrv_WinUSB.NTx86.6.1]
+"Brother HL-L5210DW" =USB_Install1009, USB\VID_04F9&PID_04E8&MI_01
+"Brother HL-L6210DW" =USB_Install1009, USB\VID_04F9&PID_04E9&MI_01
+"Brother HL-L6415DW" =USB_Install1009, USB\VID_04F9&PID_04EA&MI_01
+"Brother HL-L6410DN" =USB_Install1009, USB\VID_04F9&PID_04EB&MI_01
+"Brother HL-L5210DN" =USB_Install1009, USB\VID_04F9&PID_0503&MI_01
+"Brother HL-L6310DW" =USB_Install1009, USB\VID_04F9&PID_0504&MI_01
+"Brother HL-EX415DW" =USB_Install1009, USB\VID_04F9&PID_0505&MI_01
+"Brother HL-L5218DN" =USB_Install1009, USB\VID_04F9&PID_0506&MI_01
+"Brother HL-L5228DW" =USB_Install1009, USB\VID_04F9&PID_0507&MI_01
+"Brother HL-L6418DW" =USB_Install1009, USB\VID_04F9&PID_0508&MI_01
+"Brother HL-L6412DW" =USB_Install1009, USB\VID_04F9&PID_051C&MI_01
+"Brother HL-L5212DW" =USB_Install1009, USB\VID_04F9&PID_051D&MI_01
+"Brother HL-L5212DN" =USB_Install1009, USB\VID_04F9&PID_051E&MI_01
+"Brother HL-L5215DW" =USB_Install1009, USB\VID_04F9&PID_052A&MI_01
+"Brother HL-L6217DW" =USB_Install1009, USB\VID_04F9&PID_0529&MI_01
+
+; Windows 7/8 or later 64bit
+[BrDrv_WinUSB.NTamd64.6.1]
+"Brother HL-L5210DW" =USB_Install1009, USB\VID_04F9&PID_04E8&MI_01
+"Brother HL-L6210DW" =USB_Install1009, USB\VID_04F9&PID_04E9&MI_01
+"Brother HL-L6415DW" =USB_Install1009, USB\VID_04F9&PID_04EA&MI_01
+"Brother HL-L6410DN" =USB_Install1009, USB\VID_04F9&PID_04EB&MI_01
+"Brother HL-L5210DN" =USB_Install1009, USB\VID_04F9&PID_0503&MI_01
+"Brother HL-L6310DW" =USB_Install1009, USB\VID_04F9&PID_0504&MI_01
+"Brother HL-EX415DW" =USB_Install1009, USB\VID_04F9&PID_0505&MI_01
+"Brother HL-L5218DN" =USB_Install1009, USB\VID_04F9&PID_0506&MI_01
+"Brother HL-L5228DW" =USB_Install1009, USB\VID_04F9&PID_0507&MI_01
+"Brother HL-L6418DW" =USB_Install1009, USB\VID_04F9&PID_0508&MI_01
+"Brother HL-L6412DW" =USB_Install1009, USB\VID_04F9&PID_051C&MI_01
+"Brother HL-L5212DW" =USB_Install1009, USB\VID_04F9&PID_051D&MI_01
+"Brother HL-L5212DN" =USB_Install1009, USB\VID_04F9&PID_051E&MI_01
+"Brother HL-L5215DW" =USB_Install1009, USB\VID_04F9&PID_052A&MI_01
+"Brother HL-L6217DW" =USB_Install1009, USB\VID_04F9&PID_0529&MI_01
+
+; =================== Installation ===================
+
+;[1]
+[USB_Install]
+Include=winusb.inf
+Needs=WINUSB.NT
+AddReg=USB_Install_Reg
+
+;[1']
+[USB_Install1009]
+Include=winusb.inf
+Needs=WINUSB.NT
+AddReg=USB_Install_Reg
+
+[USB_Install_Reg]
+HKR,,PortSubClassOther,1,01
+
+;[2]
+[USB_Install.Services]
+Include=winusb.inf
+AddService=WinUSB,0x00000002,WinUSB_ServiceInstall
+
+[USB_Install1009.Services]
+Include=winusb.inf
+AddService=WinUSB,0x00000002,WinUSB_ServiceInstall
+
+;[3]
+[WinUSB_ServiceInstall]
+DisplayName     = %BrDrv_SvcDesc%
+ServiceType     = 1
+StartType       = 3
+ErrorControl    = 1
+ServiceBinary   = %12%\WinUSB.sys
+
+;[4]
+[USB_Install.Wdf]
+KmdfService=WINUSB, WinUsb_Install
+
+[USB_Install1009.Wdf]
+KmdfService=WINUSB, WinUsb_Install1009
+
+
+[WinUSB_Install]
+KmdfLibraryVersion=1.5
+
+[WinUSB_Install1009]
+KmdfLibraryVersion=1.9
+
+;[5]
+[USB_Install.HW]
+AddReg=Dev_AddReg
+
+[USB_Install1009.HW]
+AddReg=Dev_AddReg
+
+[Dev_AddReg]
+HKR,,DeviceInterfaceGUIDs,0x10000,"{C1B020BA-8308-45E2-BA53-2BFE6BD9DF3D}"
+
+;[6]
+[USB_Install.CoInstallers]
+AddReg=CoInstallers_AddReg
+CopyFiles=CoInstallers_CopyFiles
+
+[USB_Install1009.CoInstallers]
+AddReg=CoInstallers1009_AddReg
+CopyFiles=CoInstallers1009_CopyFiles
+
+[CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,"WdfCoInstaller01005.dll,WdfCoInstaller","WinUSBCoInstaller.dll"
+
+[CoInstallers_CopyFiles]
+WinUSBCoInstaller.dll
+WdfCoInstaller01005.dll
+
+[CoInstallers1009_AddReg]
+HKR,,CoInstallers32,0x00010000,"WdfCoInstaller01009.dll","WdfCoInstaller","WinUSBCoInstaller2.dll"
+
+[CoInstallers1009_CopyFiles]
+WinUSBCoInstaller2.dll
+WdfCoInstaller01009.dll
+
+[DestinationDirs]
+CoInstallers_CopyFiles=11
+DefaultDestDir = 12
+
+; ================= Source Media Section =====================
+;[7]
+
+[SourceDisksNames]
+1 = %DISK_NAME%,,,\x86
+2 = %DISK_NAME%,,,\amd64
+
+[SourceDisksFiles.x86]
+WinUSBCoInstaller.dll=1
+WdfCoInstaller01005.dll=1
+WinUSBCoInstaller2.dll=1
+WdfCoInstaller01009.dll=1
+
+[SourceDisksFiles.amd64]
+WinUSBCoInstaller.dll=2
+WdfCoInstaller01005.dll=2
+WinUSBCoInstaller2.dll=2
+WdfCoInstaller01009.dll=2
+
+; =================== Strings ===================
+
+[Strings]
+ProviderName="Brother"
+BrDrv_SvcDesc="Brother WinUSB Port Driver"
+DISK_NAME="Install Disk"
+DriverPackageDisplayName="HL-L5210DN, HL-L5210DW, HL-L6210DW, HL-L6310DW, HL-L6410DN, HL-L6415DW, HL-EX415DW, HL-L5218DN, HL-L5228DW, HL-L6418DW, HL-L6412DW, HL-L5212DW, HL-L5212DN, HL-L5215DW, HL-L6217DW"
+
+BrSerIb.SvcDesc = "Brother Serial Interface Driver(WDM)"
+BrUsbSIb.SvcDesc = "Brother Serial USB Driver(WDM)"
+BrDrvDisk1 = "Brother Driver Disk"
